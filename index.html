@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f492e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #60c1c3;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #000000;  
+        }
+
+        /* form {
+            display: flex;
+            flex-direction: column;
+        } */
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            padding: 7px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 50px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #dc3545;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #c82333;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Registration Page</h1>
+    <div class="container">
+        <form action="#" method="POST">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" placeholder="Enter your name" required>
+            <br>
+            <label for="gender">Select Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" placeholder="Enter your class" required>
+            <br>
+            <label for="skills">Skills:</label>
+            <input type="checkbox" id="c_skill" name="skills[]" value="C">
+            <label for="c_skill">C</label>
+            <input type="checkbox" id="cpp_skill" name="skills[]" value="C++">
+            <label for="cpp_skill">C++</label>
+            <input type="checkbox" id="java_skill" name="skills[]" value="Java">
+            <label for="java_skill">Java</label>
+            <input type="checkbox" id="php_skill" name="skills[]" value="PHP">
+            <label for="php_skill">PHP</label>
+            <br>
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="Select">Select</option>
+                <option value="Cs">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="E & TC">Electronics and Telecommunication</option>
+                <option value="Civil">Civil Engineering</option>
+                <option value="Mechanical">Mechanical Engineering</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
